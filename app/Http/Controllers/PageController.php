@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\khach_hang;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -399,6 +400,14 @@ class PageController extends Controller
         $obj_user->sodt = $req['sodt'];
         $obj_user->cmnd = $req['cmnd'];
         $obj_user->save();
+        $id = $obj_user->id;
+        //dd($id);
+        $obj_user = new khach_hang();
+        $obj_user->idkh= $id;
+        $obj_user->capdo='D';
+        $obj_user->diemtichluy=0;
+        $obj_user->save();
+
         return redirect()->route('trang-chu')->with('success', 'Tạo tài khoản thành công, vui lòng đăng nhập lại');
     }
 
@@ -606,13 +615,15 @@ class PageController extends Controller
             //HOA DON
             $user_id = Auth::user()->id;
             $obj_user = User::find($user_id);
-            $hoadon = new hoa_don();
+            //dd($user_id);
+            // $hoadon = new hoa_don();
 
-            $hoadon->tongtien = $tongcong;
-            $hoadon->ngayxuat = $currentDate;
-            $hoadon->idkh = $obj_user->id;
-            $hoadon->idnv = 8;
-            $hoadon->save();
+//            $hoadon->tongtien = $tongcong;
+//            $hoadon->ngayxuat = $currentDate;
+//            $hoadon->idkh = $obj_user->id;
+//            $hoadon->idnv = 8;
+//            $hoadon->save();
+            DB::table('hoa_don')->insert(array('tongtien'=>$tongcong,'ngayxuat'=>$currentDate,'idkh'=>$user_id,'idnv'=>8));
 
             $hoadonx = hoa_don::where([
                 ['tongtien', $tongcong],
@@ -620,6 +631,7 @@ class PageController extends Controller
                 ['idkh', $obj_user->id],
                 ['idnv', 8],
             ])->get();
+            //dd($hoadonx);
             //VE
 
             $cacghe = explode(",", $gheso);

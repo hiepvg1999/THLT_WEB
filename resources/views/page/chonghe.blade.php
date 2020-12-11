@@ -208,7 +208,7 @@
                                 </tr>
                                 <tr>
                                     <td>Ghế: </td>
-                                    <th> <input type="text" id="gheso" class="form-control" value="" disabled> </th>
+                                    <th> <input type="text" id="gheso" class="form-control" value="" disabled></th>
                                     </tr>
                                 <tr class="total">
                                     <td colspan="3">

@@ -13,6 +13,6 @@ class rap_khuyen_mai extends Model
     }
 
     public function khuyen_mai(){
-        return $this->belongsTo('App\khuyen_mai','makm','makm');
+        return $this->belongsTo('App\khuyen_mai','id','makm');
     }
 }

@@ -22,10 +22,10 @@ class hoa_don extends Model
     }
 
     public function nhan_vien(){
-        return $this->hasMany('App\nhan_vien','matk_nv','mahoadon');
+        return $this->hasMany('App\nhan_vien','idnv','mahoadon');
     }
 
     public function khach_hang(){
-        return $this->hasMany('App\khach_hang','matk_kh','mahoadon');
+        return $this->hasMany('App\khach_hang','idkh','mahoadon');
     }
 }

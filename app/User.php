@@ -29,11 +29,11 @@ class User extends Authenticatable
     ];
 
     public function nhan_vien(){
-        return $this->hasMany('App\nhan_vien','matk_nv','id');
+        return $this->hasMany('App\nhan_vien','idnv','id');
     }
 
     public function khach_hang(){
-        return $this->hasMany('App\khach_hang','matk_kh','id');
+        return $this->hasMany('App\khach_hang','idkh','id');
     }
 
 }
