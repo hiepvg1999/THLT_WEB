@@ -108,7 +108,7 @@
                                         <td>J</td>
                                         <td>
                                                 @if($ghe->tinhtrang == "1")
-                                                <input type="checkbox" class="redBox" checked value="{{$ghe->soghe}}">
+                                                <input type="checkbox" class="redBox" checked value="{{$ghe->soghe}}" disabled>
                                                 @else 
                                                 <input type="checkbox" class="seats" value="{{$ghe->soghe}}">
                                                 @endif
@@ -117,7 +117,7 @@
                                     @elseif($ghe->soghe == "J12")
                                         <td>
                                             @if($ghe->tinhtrang == "1")
-                                            <input type="checkbox" class="redBox" checked value="{{$ghe->soghe}}">
+                                            <input type="checkbox" class="redBox" checked value="{{$ghe->soghe}}" disabled>
                                             @else 
                                             <input type="checkbox" class="seats" value="{{$ghe->soghe}}">
                                             @endif
@@ -126,7 +126,7 @@
                                     @else
                                         <td>
                                                 @if($ghe->tinhtrang == "1")
-                                                <input type="checkbox" class="redBox" checked value="{{$ghe->soghe}}">
+                                                <input type="checkbox" class="redBox" checked value="{{$ghe->soghe}}" disabled>
                                                 @else 
                                                 <input type="checkbox" class="seats" value="{{$ghe->soghe}}">
                                                 @endif
