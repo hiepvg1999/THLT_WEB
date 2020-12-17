@@ -50,7 +50,7 @@
 					<div class="row">
 						<div class="col-sm-4">
 
-							<p class="text-center"><img src="http://lh5.googleusercontent.com/-SJWvFVdVHOc/V9cAgV8W_TI/AAAAAAAA5Bg/kaDMqDifvGsuUuhYYxUIejwftUAXGhU1gCLcB/s1600/ohgai.net-0089120916.jpg" alt="" class="rounded-circle img-fluid"></p>
+							<p class="text-center"><img src="{{asset($url->anhdaidien)}}" alt="" class="rounded-circle img-fluid"></p>
 
 							<p class="text-center"><a href="javascript:void(null)">Đổi ảnh đại diện</a></p>
 						</div>

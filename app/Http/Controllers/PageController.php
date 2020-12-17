@@ -140,7 +140,9 @@ class PageController extends Controller
 
     public function getProfileNhanvien()
     {
-        return view('page.profilenhanvien');
+        $user_id = Auth::user()->id;
+        $url = nhan_vien::where('idnv',$user_id)->first();
+        return view('page.profilenhanvien', compact('url'));
     }
 
     public function postchangePassNhanvien(Request $req)
