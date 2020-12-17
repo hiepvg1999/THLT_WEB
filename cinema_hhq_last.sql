@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 16, 2020 at 02:25 AM
+-- Generation Time: Dec 17, 2020 at 04:34 PM
 -- Server version: 8.0.21
 -- PHP Version: 7.1.19
 
@@ -2980,7 +2980,7 @@ INSERT INTO `nhan_vien` (`idnv`, `anhdaidien`, `ngaybatdau`, `chucvu`, `marap`, 
 (11, 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.0-9/20664575_847255178773864_2973611719685943201_n.jpg?_nc_cat=0&_nc_eui2=AeFKAT3r-6xyO9HNIwItkjPhlgHbef5AvhgWNmmov-NVJNMdgwZdMdli6qXl5KCloNrlbiKHE4Hl8FTexrv1cH8W3gIe3p3esq4HdsH6vOlQ9w&oh=ad635f4c482d25ddcb939fc8374bdab1&oe=5B7DA261', '2016-08-15', 'Bán vé, quản lý', 6, NULL),
 (12, 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.0-1/32294622_2020570854870618_8840139440836837376_n.jpg?_nc_cat=0&_nc_eui2=AeGlwbv4fJNGTq3TLeil9Mhm3YaPIuP2xai_A9iZlKk5gJpW0OsW9XhqOHVTucpJEpfu75zN28GYkMOnrWBkhZBa_jgpsYc1n6Ny-TizRv5B4A&oh=fede4855cc363ed8901d0e1b6847753d&oe=5B98AC51', '2018-05-15', 'Bán vé', 4, 11),
 (13, 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.0-9/32511958_2070093176648254_1424641236198752256_n.jpg?_nc_cat=0&_nc_eui2=AeHdbD4zrIqTn9HfBLwhPRmouejTjrIkL-LKnPTzFSK6c0467Nbl5X_3BmBFF83Mi_MGijPcj2sJ6j7YF8vTv6ZsLNyPUAPN9FASBvqziEfNqg&oh=b4e8417280aa4f123412ec9a01570651&oe=5B95826F', '2016-08-15', 'Bán vé', 5, 11),
-(20, 'https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-0/c0.150.640.640a/s552x414/118918203_826538801421657_7497952422851580111_n.jpg?_nc_cat=106&ccb=2&_nc_sid=da31f3&_nc_ohc=3gmftgwNgwEAX_IF-gT&_nc_ht=scontent.fhan2-1.fna&tp=28&oh=85149ecc2957ac8790e4d7518536821a&oe=5FFF6657', '2020-12-16', 'Quản lý', 6, 11);
+(20, 'sources/img/ha.jpg', '2020-12-16', 'Quản lý', 6, 11);
 
 -- --------------------------------------------------------
 
@@ -3298,7 +3298,7 @@ INSERT INTO `users` (`id`, `email`, `password`, `ngaysinh`, `gioitinh`, `sodt`, 
 (17, 'anhnd1@gmail.com', '$2y$10$zzvnFJBFav3RBoigUx9hs.4jE20VSdxyti6pmtx6iLx0GNdUiSqBS', '1999-02-04', 1, '0399685168', 'nguyen duc anh', '456298472', '2020-12-11', '2020-12-11', 'bdHz0c6WBEiJmBSeLLQFBdZ2MOmVPcob9UpcHnwIvcVfyI1Hvg7VzIyfoo9q'),
 (18, 'hiep.nm176750@sis.hust.edu.vn', '$2y$10$xM13z.inCFInp15Y7eym.Odnyh3XA3zUjn4VMbCCHVS84W7bcuceK', '1999-01-11', 1, '0399685128', 'Nguyen Manh Hiep', '099999999', '2020-12-11', '2020-12-11', NULL),
 (19, 'quangnd@gmail.com', '$2y$10$LSqd9dc9bw1GlkeD5FZvS.ZPNw4dSVzpLMeSoUgGsq3mUbXPAzjwe', '1999-01-03', 1, '0974726869', 'Quang Nguyen', '013626151', '2020-12-12', '2020-12-12', 'GdGqLjUnhqNqjym6c1SI9P7nW29YVvAS4yPjGe8mfg0GqXwEKhPOz6vBWxEn'),
-(20, 'hhqcinema@gmail.com', '$2y$10$LSqd9dc9bw1GlkeD5FZvS.ZPNw4dSVzpLMeSoUgGsq3mUbXPAzjwe', '1999-12-14', 1, '0344982572', 'HHQCinema', '152222222', '2020-12-16', '2020-12-16', 'hVlHcxyYfysSVYNCOGD52YJ46U3okwzLEO9k0vfZ0ApEnmuJREQJ6bTga2TM');
+(20, 'hhqcinema@gmail.com', '$2y$10$LSqd9dc9bw1GlkeD5FZvS.ZPNw4dSVzpLMeSoUgGsq3mUbXPAzjwe', '1999-12-14', 1, '0344982572', 'HHQCinema', '152222222', '2020-12-16', '2020-12-16', 'Ly36zwlMzXw5AoIz3Hy4dRGNflETLt714n5SILlvXZesRnBzstSQWCWMgJkS');
 
 -- --------------------------------------------------------
 
